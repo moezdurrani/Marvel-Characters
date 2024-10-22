@@ -1,0 +1,142 @@
+/* Apply background to the whole body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('./assets/wallpaper.jpg') no-repeat center center fixed; 
+  background-size: cover; /* Ensure the background covers the entire area */
+}
+
+/* Glass effect on the App container */
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: white;
+  /* background: rgba(255, 255, 255, 0.1);  */
+  border-radius: 15px;
+  /* backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);  */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  */
+  /* border: 1px solid rgba(255, 255, 255, 0.3);  */
+}
+
+/* Fix for summary container to display items in a row */
+.summary-container {
+  display: flex;
+  justify-content: space-between; /* Spread the items out evenly */
+  gap: 20px; /* Add spacing between items */
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Ensure the items wrap if the screen size is small */
+}
+
+/* Each summary item with glass effect */
+.summary-item {
+  flex: 1;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  backdrop-filter: blur(5px); /* Slight blur for glass effect */
+  -webkit-backdrop-filter: blur(5px); /* Safari Support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  text-align: center;
+  min-width: 150px; /* Ensure a minimum width for each summary item */
+}
+
+
+/* Filters container glass effect */
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Filter item styles */
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+}
+
+/* Input and select styles for filters */
+input, select {
+  width: 220px;
+  height: 45px;
+  font-size: 1.1em;
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2); /* Transparent input background */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #000;
+  backdrop-filter: blur(5px); /* Slight blur for glass effect */
+  -webkit-backdrop-filter: blur(5px);
+}
+
+input::placeholder {
+  color: #b7b7b7; /* Change this to the desired color */
+  opacity: 1; /* Ensures full opacity (some browsers reduce opacity by default) */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Character list glass-like effect */
+.character-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* Character item glass effect */
+.character-item {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari Support */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  width: 80%;
+  max-width: 500px;
+}
+
+.character-icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.character-details {
+  text-align: left;
+}
+
+.character-details h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.character-details p {
+  margin: 5px 0;
+}
